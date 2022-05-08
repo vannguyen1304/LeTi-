@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.25s ease-out;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgb(107, 178, 53), rgb(8, 228, 166));
+}
+.container {
+    margin-top: 100px;
+    width: 800px;
+    min-height: 500px;
+    padding: 20px;
+    border: 2px solid rgb(121, 102, 102);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container .title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container .menu {
+    font-size: 24px;
+    display: flex;
+
+}
+
+.container .menu-item {
+    padding: 10px ;
+    display: inline-block;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.container .menu-item.active {
+    background-color: white;
+}
+.container .info {
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.info-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-container-block {
+    display: flex;
+    align-items: center;
+}
+.btn-container {
+    background-color: rgb(207, 206, 206);
+    width: 38px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 20px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.btn-container .btn{
+    width: 16px ;
+    height: 16px;
+    background-color: rgb(93, 88, 88);
+    border-radius: 50%;
+}
+
+.btn-container .btn.active {
+    margin-left: auto;
+}
+
+.info-block{
+    display: flex;
+    color: white;
+}
+.info-item {
+    margin: 10px;
+    background: linear-gradient(to right, rgb(52, 46, 46),rgb(88, 80, 80));
+    padding: 10px;
+    border-radius: 10px;
+    height: 160px;
+}    
+
+.info-item:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.info-item-1 {
+    flex:1
+}
+
+.info-item-1 .info-item-icon{
+    font-size: 70px;
+    height: 60%;
+    align-items: center;
+    width: 100%;
+}
+.info-item-2 {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-item-2-1{
+    flex: 1;
+    display: flex;
+}
+
+.info-item-2-1 i{
+    flex: 1;
+    font-size: 60px;
+}
+
+.info-item-2-1 div {
+    align-self: center;
+    flex: 2;
+}
+
+.info-item-2-2 {
+    flex: 1;
+    display: flex;
+}
+
+.info-item-2-2 div i {
+    font-size: 40px;
+}
+
+.info-item-2-2 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.info-item-2-2 .humidity{
+    flex: 1;
+}
+
+
+.info-item-2-2 .pressure {
+    flex: 1;
+}
+
+.info-item-2-2 .pressure i{
+
+}
+.info-item .info-item-title {
+    margin-bottom: 10px;
+}
+
